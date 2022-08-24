@@ -38,8 +38,6 @@ body{
 }
 .navbar
 {
-	position: fixed;
-	z-index: 2;
 	width: 100%;
 	opacity: 0.9;
 	color: #273d46;
