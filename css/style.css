@@ -132,7 +132,23 @@ body{
 .content-bottom-info-list li:nth-child(4) span{
 	opacity: 0.3;
 }
+@-webkit-keyframes bounce {
+	0% {
+transform: scale(1,1) translate(0px, 0px);
+}
 
+30%{
+transform: scale(1,0.9) translate(0px, 10px); 
+}
+
+75%{
+transform: scale(1,1.1) translate(0px, -25px); 
+}
+
+100% {
+transform: scale(1,1) translate(0px, 0px);
+}
+}
 .content-bottom-info__link {
 	display: inline-block;
 	height: 44px;
@@ -148,12 +164,15 @@ body{
 	text-transform: uppercase;
 	letter-spacing: 2.8px;
 	color: #ffff;
+
+	-webkit-animation: bounce 1s infinite;
  }
 .content-bottom-info__link span{
 	padding-right: 31px;
 	background: url(../img/arrow.png) right no-repeat;
  }
  .content-bottom-info__link:hover {
+	animation-play-state: paused;
 	background-color: #ad2a2a;
  }
  .content-bottom-info__link:active {
