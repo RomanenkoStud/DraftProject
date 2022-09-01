@@ -144,22 +144,10 @@ body{
 .content-bottom-info-list li:nth-child(4) span{
 	opacity: 0.3;
 }
-@-webkit-keyframes bounce {
-	0% {
-transform: scale(1,1) translate(0px, 0px);
-}
-
-30%{
-transform: scale(1,0.9) translate(0px, 10px); 
-}
-
-75%{
-transform: scale(1,1.1) translate(0px, -25px); 
-}
-
-100% {
-transform: scale(1,1) translate(0px, 0px);
-}
+@keyframes blinker {
+	50% {
+	  opacity: 0.5;
+	}
 }
 .content-bottom-info__link {
 	display: inline-block;
@@ -177,7 +165,7 @@ transform: scale(1,1) translate(0px, 0px);
 	letter-spacing: 2.8px;
 	color: #ffff;
 
-	-webkit-animation: bounce 1s infinite;
+	animation: blinker 3s linear infinite;
  }
 .content-bottom-info__link span{
 	padding-right: 31px;
@@ -185,7 +173,7 @@ transform: scale(1,1) translate(0px, 0px);
  }
  .content-bottom-info__link:hover {
 	animation-play-state: paused;
-	background-color: #ad2a2a;
+	background-color: #a0e2de;
  }
  .content-bottom-info__link:active {
 	position: relative;
