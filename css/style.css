@@ -193,5 +193,6 @@ body{
 
 canvas {
 	position: absolute;
+	z-index: 200;
   }
   
